@@ -8,9 +8,9 @@ const binarySearch = (arr) => {
     const item = arr[mid];
 
     if (item > target) {
-      start = mid + 1;
-    } else if (item < target) {
       end = mid - 1;
+    } else if (item < target) {
+      start = mid + 1;
     } else {
       return mid;
     }
